@@ -1,0 +1,16 @@
+{
+    "name": "toastinette",
+    "description": "Ultra lightweight notification library",
+    "version": "1.0.0",
+    "main": "dist/toastinette.js",
+    "devDependencies": {
+        "gulp": "^4.0.0",
+        "gulp-clean-css": "^3.10.0",
+        "gulp-concat": "^2.6.1",
+        "gulp-eslint": "^5.0.0",
+        "gulp-rename": "^1.4.0",
+        "gulp-size": "^3.0.0",
+        "gulp-uglify": "^3.0.1",
+        "uglify-es": "^3.3.9"
+    }
+}

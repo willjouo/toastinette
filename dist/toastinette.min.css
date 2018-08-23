@@ -1,0 +1,1 @@
+#toastinette{position:fixed;z-index:9999;bottom:12px;right:12px}#toastinette>div{position:relative;margin:0 0 6px;padding:15px;width:300px;border-radius:3px;color:#fff;opacity:0;transition:opacity 1s}.toastinette-success{background-color:#51a351}.toastinette-info{background-color:#2f96b4}.toastinette-warning{background-color:#f89406}.toastinette-error{background-color:#bd362f}

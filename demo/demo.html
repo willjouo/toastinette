@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Toastinette</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="../dist/toastinette.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <h1>Toastinette</h1>
+    <button type="button" id="success">Success</button>
+    <button type="button" id="info">Info</button>
+    <button type="button" id="warning">Warning</button>
+    <button type="button" id="error">Error</button>
+    <script src="../dist/toastinette.js"></script>
+    <script>
+        var nextID = 1;
+        document.getElementById('success').addEventListener('click', ()=>{
+            Toastinette('success', 2000+Math.random()*5000, 'Hello! ('+(nextID++)+')')
+        });
+    </script>
+</body>
+</html>
