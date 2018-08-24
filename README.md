@@ -1,8 +1,16 @@
+<p style="text-align: center">
+    <img src="docs/icon.png">
+</p>
+
 # Toastinette
 
 The challenge was to create a notification library under 1 KB.
 
-Therefore, Toastinette is an ultra-lightweight (minified CSS + JS <= 1 KB) notification library with no dependencies. It's ultra lightweight because it does *not* accept user input and there is no progress bar.
+Toastinette is an ultra-lightweight (minified CSS + JS <= 1 KB) notification library with no dependencies. It does *not* accept user input and there is no progress bar.
+
+<p style="text-align: center">
+    <img src="docs/demo.gif">
+</p>
 
 ## Size
 
@@ -14,7 +22,13 @@ Therefore, Toastinette is an ultra-lightweight (minified CSS + JS <= 1 KB) notif
 
 ## Installation
 
-### Manual
+### 📦 npm
+
+```
+npm i --save toastinette
+```
+
+### 🖐️ Manual
 
 In the ```<head>``` section:
 ```html
@@ -24,10 +38,6 @@ At the bottom of the ```<body>```:
 ```html
 <script src="dist/toastinette.min.js"></script>
 ```
-
-### npm
-
-todo
 
 ## Usage
 
