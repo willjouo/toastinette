@@ -20,6 +20,7 @@ gulp.task('css', ()=>{
         .pipe(cleanCSS())
         .pipe(rename('toastinette.min.css'))
         .pipe(gulp.dest('dist'))
+        .pipe(gulp.dest('docs'))
         .pipe(size({showFiles: true }));
 });
 
@@ -44,6 +45,7 @@ gulp.task('js', ()=>{
         }}))
         .pipe(rename('toastinette.min.js'))
         .pipe(gulp.dest('dist'))
+        .pipe(gulp.dest('docs'))
         .pipe(size({showFiles: true }));
 });
 

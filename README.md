@@ -1,4 +1,4 @@
-<p style="text-align: center">
+<p align="center">
     <img src="docs/icon.png">
 </p>
 
@@ -8,7 +8,8 @@ The challenge was to create a notification library under 1 KB.
 
 Toastinette is an ultra-lightweight (minified CSS + JS <= 1 KB) notification library with no dependencies. It does *not* accept user input and there is no progress bar.
 
-<p style="text-align: center">
+## [Check out the demo!](https://willjouo.github.io/toastinette/)
+<p align="center">
     <img src="docs/demo.gif">
 </p>
 
