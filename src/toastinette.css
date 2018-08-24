@@ -1,19 +1,15 @@
 #toastinette {
     position: fixed;
-    z-index: 9999;
-    bottom: 12px;
-    right: 12px;
+    z-index: 999;
 }
 
 #toastinette > div {
-    position: relative;
     margin: 0 0 6px;
     padding: 15px;
     width: 300px;
     border-radius: 3px;
     color: #fff;
-    opacity: 0;
-    transition: opacity 1s;
+    transition: opacity 0.3s;
 }
 
 .toastinette-success {

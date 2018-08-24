@@ -4,19 +4,52 @@
     <meta charset="utf-8" />
     <title>Toastinette</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link href="../dist/toastinette.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <h1>Toastinette</h1>
-    <button type="button" id="success">Success</button>
-    <button type="button" id="info">Info</button>
-    <button type="button" id="warning">Warning</button>
-    <button type="button" id="error">Error</button>
+    <div class="container">
+        <h1 class="mt-5 text-center display-1">Toastinette</h1>
+        <div class="mt-5 text-center">
+            <button type="button" class="btn btn-success" id="success">Success</button>
+            <button type="button" class="btn btn-info" id="info">Info</button>
+            <button type="button" class="btn btn-warning" id="warning">Warning</button>
+            <button type="button" class="btn btn-danger" id="error">Error</button>
+        </div>
+        <div class="mt-5 text-center">
+            <button type="button" class="btn btn-primary" id="tl">Top left</button>
+            <button type="button" class="btn btn-primary" id="tr">Top right with 50px margin</button>
+            <button type="button" class="btn btn-primary" id="bl">Bottom left</button>
+            <button type="button" class="btn btn-primary" id="br">Bottom right</button>
+        </div>
+    </div>
     <script src="../dist/toastinette.js"></script>
     <script>
         var nextID = 1;
-        document.getElementById('success').addEventListener('click', ()=>{
-            Toastinette('success', 2000+Math.random()*5000, 'Hello! ('+(nextID++)+')')
+        const click = (id, fn)=>{document.getElementById(id).addEventListener('click', fn);};
+        click('success', ()=>{
+            Toastinette.show('success', 2000+Math.random()*5000, 'Success! ('+(nextID++)+')');
+        });
+        click('info', ()=>{
+            Toastinette.show('info', 2000+Math.random()*5000, 'Info! ('+(nextID++)+')');
+        });
+        click('warning', ()=>{
+            Toastinette.show('warning', 2000+Math.random()*5000, 'Warning! ('+(nextID++)+')');
+        });
+        click('error', ()=>{
+            Toastinette.show('error', 2000+Math.random()*5000, 'Error! ('+(nextID++)+')');
+        });
+        click('br', ()=>{
+            Toastinette.setPosition('br');
+        });
+        click('bl', ()=>{
+            Toastinette.setPosition('bl');
+        });
+        click('tr', ()=>{
+            Toastinette.setPosition('tr', 50);
+        });
+        click('tl', ()=>{
+            Toastinette.setPosition('tl');
         });
     </script>
 </body>
