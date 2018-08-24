@@ -3,6 +3,30 @@
     "description": "Ultra lightweight notification library",
     "version": "1.0.0",
     "main": "dist/toastinette.js",
+    "keywords": [
+        "toastinette",
+        "toast",
+        "notification",
+        "alert",
+        "confirm",
+        "confirmation",
+        "success",
+        "error",
+        "warning",
+        "information"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/willjouo/toastinette.git"
+    },
+    "bugs": {
+        "url": "https://github.com/willjouo/toastinette/issues"
+    },
+    "author": {
+        "name": "William Jouot",
+        "url": "http://williamjouot.com"
+    },
+    "license": "MIT",
     "devDependencies": {
         "gulp": "^4.0.0",
         "gulp-clean-css": "^3.10.0",
