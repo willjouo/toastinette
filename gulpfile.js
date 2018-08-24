@@ -48,14 +48,6 @@ gulp.task('js', ()=>{
 });
 
 /**
-* Watch task
-**/
-//gulp.task('watch', ['styl','scripts'], function() {
-    //gulp.watch('./src/css/**/*.styl', [ 'styl' ])    // watch for changes and run the css task
-    //gulp.watch('./src/js/**/*.js', [ 'scripts' ])    // watch for changes and run the js task
-//})
-
-/**
 * Default task
 **/
 gulp.task('default', gulp.parallel('css', 'lint', 'js'));
