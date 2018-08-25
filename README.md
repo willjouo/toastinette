@@ -2,7 +2,12 @@
     <img src="docs/icon.png">
 </p>
 
-# Toastinette
+<h1 align="center">Toastinette</h1>
+
+<p align="center">
+    <img src="https://img.shields.io/badge/minified%20size-1024%20B-blue.svg">
+    <img src="https://img.shields.io/github/license/willjouo/toastinette.svg">
+</p>
 
 The challenge was to create a notification library under 1 KB.
 
